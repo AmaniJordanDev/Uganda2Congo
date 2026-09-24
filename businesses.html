@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover businesses, shops, restaurants, services and opportunities across Uganda and Congo.">
+    <title>Businesses | Uganda2Congo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="businesses.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="uganda-text">UGANDA</span>
+                <span class="two-text">2</span>
+                <span class="congo-text">CONGO</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="home">Home</a>
+                <a href="index.html#about" data-i18n="about">About Us</a>
+                <a href="index.html#how-it-works" data-i18n="howItWorks">How It Works</a>
+                <a href="businesses.html" class="active" data-i18n="businesses">Businesses</a>
+                <a href="index.html#marketplace" data-i18n="marketplace">Marketplace</a>
+                <a href="index.html#services" data-i18n="services">Services</a>
+            </nav>
+
+            <div class="nav-right">
+                <!-- LANGUAGE SELECTOR -->
+                <div class="language-selector">
+                    <button class="language-button" id="languageButton">
+                        <span>🌐</span>
+                        <span id="selectedLanguage">English</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="language-menu" id="languageMenu">
+                        <button data-language="en">English</button>
+                        <button data-language="lg">Luganda</button>
+                        <button data-language="sw">Kiswahili</button>
+                        <button data-language="fr">Français</button>
+                        <button data-language="ln">Lingála</button>
+                    </div>
+                </div>
+
+                <a href="#" class="login-btn" data-i18n="login">Login</a>
+                <a href="#" class="start-btn" data-i18n="getStarted">Get Started</a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button class="menu-button" id="menuButton" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" data-i18n="home">Home</a>
+            <a href="index.html#about" data-i18n="about">About Us</a>
+            <a href="index.html#how-it-works" data-i18n="howItWorks">How It Works</a>
+            <a href="businesses.html" class="active" data-i18n="businesses">Businesses</a>
+            <a href="index.html#marketplace" data-i18n="marketplace">Marketplace</a>
+            <a href="index.html#services" data-i18n="services">Services</a>
+            <div class="mobile-actions">
+                <a href="#" class="login-btn" data-i18n="login">Login</a>
+                <a href="#" class="start-btn" data-i18n="getStarted">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="business-hero">
+            <div class="hero-overlay"></div>
+            <div class="container business-hero-content">
+                <div class="hero-badge">
+                    <span class="badge-line"></span>
+                    <span>UGANDA</span>
+                    <span class="badge-arrow">↔</span>
+                    <span>CONGO</span>
+                </div>
+
+                <h1>Discover Businesses<span>Across Borders.</span></h1>
+                <p>Find trusted businesses, shops, restaurants, services and opportunities connecting Uganda and Congo.</p>
+
+                <!-- SEARCH -->
+                <div class="business-search">
+                    <div class="search-field">
+                        <span class="search-icon">⌕</span>
+                        <input type="text" id="businessSearch" placeholder="Search businesses, products or services...">
+                    </div>
+
+                    <div class="location-field">
+                        <span>⌖</span>
+                        <select id="countryFilter">
+                            <option value="all">Uganda & Congo</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="congo">Congo</option>
+                        </select>
+                    </div>
+
+                    <button id="searchBtn">Search</button>
+                </div>
+
+                <div class="hero-trust">
+                    <span>Explore local businesses</span>
+                    <span class="trust-dot"></span>
+                    <span>Connect directly</span>
+                    <span class="trust-dot"></span>
+                    <span>Grow across borders</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CATEGORIES ================= -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">EXPLORE</span>
+                        <h2>Browse by <span>Category</span></h2>
+                    </div>
+                    <p>Find businesses based on what you need.</p>
+                </div>
+
+                <div class="category-grid">
+                    <button class="category-card" data-category="all">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=60" alt="All Businesses">
+                        </div>
+                        <h3>All Businesses</h3>
+                        <span>Explore everything</span>
+                    </button>
+
+                    <button class="category-card" data-category="restaurant">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561549?auto=format&fit=crop&w=500&q=60" alt="Restaurants">
+                        </div>
+                        <h3>Restaurants</h3>
+                        <span>Food & dining</span>
+                    </button>
+
+                    <button class="category-card" data-category="shop">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=500&q=60" alt="Shops & Retail">
+                        </div>
+                        <h3>Shops & Retail</h3>
+                        <span>Products & stores</span>
+                    </button>
+
+                    <button class="category-card" data-category="transport">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1578574494267-541efbb3b5d0?auto=format&fit=crop&w=500&q=60" alt="Transport">
+                        </div>
+                        <h3>Transport</h3>
+                        <span>Moving goods & people</span>
+                    </button>
+
+                    <button class="category-card" data-category="construction">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&q=60" alt="Construction">
+                        </div>
+                        <h3>Construction</h3>
+                        <span>Building & materials</span>
+                    </button>
+
+                    <button class="category-card" data-category="fashion">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1539008588-a14967bf9f9c?auto=format&fit=crop&w=500&q=60" alt="Fashion">
+                        </div>
+                        <h3>Fashion</h3>
+                        <span>Clothing & design</span>
+                    </button>
+
+                    <button class="category-card" data-category="technology">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=60" alt="Technology">
+                        </div>
+                        <h3>Technology</h3>
+                        <span>Tech & digital</span>
+                    </button>
+
+                    <button class="category-card" data-category="agriculture">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=60" alt="Agriculture">
+                        </div>
+                        <h3>Agriculture</h3>
+                        <span>Farming & produce</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FEATURED BUSINESSES ================= -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="section-heading featured-heading">
+                    <div>
+                        <span class="section-label">DISCOVER</span>
+                        <h2>Featured Businesses</h2>
+                    </div>
+                    <button class="view-all-btn" id="viewAllBtn">View All →</button>
+                </div>
+
+                <div class="business-grid">
+                    <!-- BUSINESS CARD 1 -->
+                    <article class="business-card" data-name="Kampala Restaurant" data-category="restaurant" data-country="uganda">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561549?auto=format&fit=crop&w=500&h=300&q=60" alt="Kampala Restaurant">
+                            <span class="country-badge">Uganda</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Restaurant</span>
+                            <h3>Kampala Restaurant</h3>
+                            <p>Authentic Ugandan and African cuisine in the heart of Kampala.</p>
+                            <div class="business-location">Kampala, Uganda</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 2 -->
+                    <article class="business-card" data-name="Congo Fabrics" data-category="shop" data-country="congo">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=500&h=300&q=60" alt="Congo Fabrics">
+                            <span class="country-badge">Congo</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Shop</span>
+                            <h3>Congo Fabrics</h3>
+                            <p>High-quality African textiles and traditional fabrics.</p>
+                            <div class="business-location">Kinshasa, Congo</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 3 -->
+                    <article class="business-card" data-name="Uganda Transport" data-category="transport" data-country="uganda">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1578574494267-541efbb3b5d0?auto=format&fit=crop&w=500&h=300&q=60" alt="Uganda Transport">
+                            <span class="country-badge">Uganda</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Transport</span>
+                            <h3>Uganda Transport</h3>
+                            <p>Cross-border logistics and cargo services.</p>
+                            <div class="business-location">Kampala, Uganda</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 4 -->
+                    <article class="business-card" data-name="Congo Construction" data-category="construction" data-country="congo">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&h=300&q=60" alt="Congo Construction">
+                            <span class="country-badge">Congo</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Construction</span>
+                            <h3>Congo Construction</h3>
+                            <p>Building materials and construction services.</p>
+                            <div class="business-location">Kinshasa, Congo</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 5 -->
+                    <article class="business-card" data-name="Fashion Forward" data-category="fashion" data-country="uganda">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1539008588-a14967bf9f9c?auto=format&fit=crop&w=500&h=300&q=60" alt="Fashion Forward">
+                            <span class="country-badge">Uganda</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Fashion</span>
+                            <h3>Fashion Forward</h3>
+                            <p>Contemporary African fashion and accessories.</p>
+                            <div class="business-location">Kampala, Uganda</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 6 -->
+                    <article class="business-card" data-name="Tech Hub Congo" data-category="technology" data-country="congo">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&h=300&q=60" alt="Tech Hub Congo">
+                            <span class="country-badge">Congo</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Technology</span>
+                            <h3>Tech Hub Congo</h3>
+                            <p>Digital solutions and IT services for African businesses.</p>
+                            <div class="business-location">Kinshasa, Congo</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 7 -->
+                    <article class="business-card" data-name="Uganda Farms" data-category="agriculture" data-country="uganda">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&h=300&q=60" alt="Uganda Farms">
+                            <span class="country-badge">Uganda</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Agriculture</span>
+                            <h3>Uganda Farms</h3>
+                            <p>Fresh produce and agricultural products.</p>
+                            <div class="business-location">Fort Portal, Uganda</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+
+                    <!-- BUSINESS CARD 8 -->
+                    <article class="business-card" data-name="Congo Coffee" data-category="restaurant" data-country="congo">
+                        <div class="business-image">
+                            <img src="https://images.unsplash.com/photo-1495474472645-4c71bcdd2d18?auto=format&fit=crop&w=500&h=300&q=60" alt="Congo Coffee">
+                            <span class="country-badge">Congo</span>
+                        </div>
+                        <div class="business-info">
+                            <span class="business-category">Restaurant</span>
+                            <h3>Congo Coffee</h3>
+                            <p>Premium coffee shop and cafe experience.</p>
+                            <div class="business-location">Kinshasa, Congo</div>
+                            <button class="contact-business">View Business</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="no-results" id="noResults">
+                    <div>⌕</div>
+                    <h3>No businesses found</h3>
+                    <p>Try another search or category.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CROSS-BORDER SECTION ================= -->
+        <section class="cross-border-section">
+            <div class="container">
+                <div class="cross-border-content">
+                    <div class="cross-border-text">
+                        <span class="section-label">CROSS-BORDER BUSINESS</span>
+                        <h2>Your next business connection could be <span>across the border.</span></h2>
+                        <p>Uganda2Congo helps businesses become easier to discover by people and companies looking for products, services and partnerships across Uganda and Congo.</p>
+
+                        <div class="cross-border-points">
+                            <div>
+                                <span>01</span>
+                                <div>
+                                    <strong>Get discovered</strong>
+                                    <p>Put your business in front of new customers.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span>02</span>
+                                <div>
+                                    <strong>Connect directly</strong>
+                                    <p>Make it easier for customers to reach you.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span>03</span>
+                                <div>
+                                    <strong>Expand your reach</strong>
+                                    <p>Build connections beyond your local market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cross-border-visual">
+                        <div class="connection-card">
+                            <div class="connection-country uganda-country">
+                                <span>🇺🇬</span>
+                                <div>
+                                    <strong>Uganda</strong>
+                                    <small>Businesses</small>
+                                </div>
+                            </div>
+                            <div class="connection-line">
+                                <span>2</span>
+                            </div>
+                            <div class="connection-country congo-country">
+                                <span>🇨🇩</span>
+                                <div>
+                                    <strong>Congo</strong>
+                                    <small>Businesses</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BUSINESS OWNER CTA ================= -->
+        <section class="business-owner-section">
+            <div class="container">
+                <div class="owner-card">
+                    <div class="owner-content">
+                        <span class="section-label">FOR BUSINESS OWNERS</span>
+                        <h2>Put your business <span>on the map.</span></h2>
+                        <p>Create your business presence on Uganda2Congo and make it easier for customers across Uganda and Congo to discover what you offer.</p>
+                        <div class="owner-buttons">
+                            <a href="#" class="primary-btn">List Your Business →</a>
+                            <a href="#" class="secondary-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="owner-mark">
+                        <span>U</span>
+                        <strong>2</strong>
+                        <span>C</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="uganda-text">UGANDA</span>
+                    <span class="two-text">2</span>
+                    <span class="congo-text">CONGO</span>
+                </a>
+                <p>Connecting people, businesses and opportunities between Uganda and Congo.</p>
+                <div class="footer-countries">
+                    🇺🇬 Uganda
+                    <span>•</span>
+                    🇨🇩 Congo
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Platform</h4>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="businesses.html">Businesses</a>
+                </div>
+
+                <div>
+                    <h4>Discover</h4>
+                    <a href="index.html#marketplace">Marketplace</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#services">Transport</a>
+                    <a href="index.html#services">Products</a>
+                </div>
+
+                <div>
+                    <h4>Business</h4>
+                    <a href="#">List Your Business</a>
+                    <a href="#">Business Support</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Uganda2Congo. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/businesses.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

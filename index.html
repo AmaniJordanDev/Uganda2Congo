@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uganda2Congo connects people, businesses, products and opportunities between Uganda and Congo.">
+    <title>Uganda2Congo | Connecting Uganda & Congo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="uganda-text">UGANDA</span>
+                <span class="two-text">2</span>
+                <span class="congo-text">CONGO</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active" data-i18n="home">Home</a>
+                <a href="#about" data-i18n="about">About Us</a>
+                <a href="#how-it-works" data-i18n="howItWorks">How It Works</a>
+                <a href="businesses.html" data-i18n="businesses">Businesses</a>
+                <a href="#marketplace" data-i18n="marketplace">Marketplace</a>
+                <a href="#services" data-i18n="services">Services</a>
+            </nav>
+
+            <div class="nav-right">
+                <!-- LANGUAGE SELECTOR -->
+                <div class="language-selector">
+                    <button class="language-button" id="languageButton">
+                        <span>🌐</span>
+                        <span id="selectedLanguage">English</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="language-menu" id="languageMenu">
+                        <button data-language="en">English</button>
+                        <button data-language="lg">Luganda</button>
+                        <button data-language="sw">Kiswahili</button>
+                        <button data-language="fr">Français</button>
+                        <button data-language="ln">Lingála</button>
+                    </div>
+                </div>
+
+                <a href="#" class="login-btn" data-i18n="login">Login</a>
+                <a href="#" class="start-btn" data-i18n="getStarted">Get Started</a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button class="menu-button" id="menuButton" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="active" data-i18n="home">Home</a>
+            <a href="#about" data-i18n="about">About Us</a>
+            <a href="#how-it-works" data-i18n="howItWorks">How It Works</a>
+            <a href="businesses.html" data-i18n="businesses">Businesses</a>
+            <a href="#marketplace" data-i18n="marketplace">Marketplace</a>
+            <a href="#services" data-i18n="services">Services</a>
+            <div class="mobile-actions">
+                <a href="#" class="login-btn" data-i18n="login">Login</a>
+                <a href="#" class="start-btn" data-i18n="getStarted">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Uganda 🇺🇬
+                    <span>↔</span>
+                    Congo 🇨🇩
+                </div>
+
+                <h1>
+                    <span data-i18n="heroLineOne">Connecting</span>
+                    <span class="yellow-text"><span data-i18n="uganda">Uganda</span></span>
+                    <span data-i18n="and">&</span>
+                    <span class="blue-text"><span data-i18n="congo">Congo</span></span>
+                </h1>
+
+                <p data-i18n="heroDescription">A platform connecting people, businesses, products and opportunities across Uganda and Congo.</p>
+
+                <div class="hero-buttons">
+                    <a href="businesses.html" class="primary-btn" data-i18n="discoverPlatform">
+                        Discover Uganda2Congo
+                        <span>→</span>
+                    </a>
+                    <a href="businesses.html" class="secondary-btn" data-i18n="joinUs">Join Uganda2Congo</a>
+                </div>
+
+                <div class="hero-bottom">
+                    <div class="country">
+                        <strong>🇺🇬</strong>
+                        <div>
+                            <small data-i18n="from">FROM</small>
+                            <span data-i18n="uganda">Uganda</span>
+                        </div>
+                    </div>
+                    <div class="connection-line">
+                        <span></span>
+                    </div>
+                    <div class="country">
+                        <strong>🇨🇩</strong>
+                        <div>
+                            <small data-i18n="to">TO</small>
+                            <span data-i18n="congo">Congo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label" data-i18n="whoWeAre">WHO WE ARE</span>
+                    <h2 data-i18n="aboutTitle">More than a platform. A connection.</h2>
+                    <p class="lead" data-i18n="aboutLead">Uganda2Congo is a digital platform built to bring people and businesses in Uganda and Congo closer together.</p>
+                </div>
+
+                <p class="about-text" data-i18n="aboutText">
+                    Whether you are looking for a business, discovering products, finding services, moving goods or building new connections, Uganda2Congo gives you a place to discover opportunities across borders.
+                </p>
+
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3 data-i18n="crossBorder">Cross-Border Connection</h3>
+                        <p data-i18n="crossBorderText">Discover people and businesses across Uganda and Congo from one platform.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3 data-i18n="businessDiscovery">Business Discovery</h3>
+                        <p data-i18n="businessDiscoveryText">Find businesses, suppliers and service providers and connect with them directly.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3 data-i18n="opportunities">New Opportunities</h3>
+                        <p data-i18n="opportunitiesText">Create new connections that can lead to trade, collaboration and growth.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h3 data-i18n="onePlatform">One Platform</h3>
+                        <p data-i18n="onePlatformText">Bring businesses, products, services and logistics into one growing ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHY UGANDA2CONGO ================= -->
+        <section class="why-section">
+            <div class="container">
+                <span class="section-label" data-i18n="whyUganda2Congo">WHY UGANDA2CONGO</span>
+                <h2 data-i18n="whyTitle">One connection. Many possibilities.</h2>
+                <p data-i18n="whyDescription">We are building a digital bridge between people, businesses and opportunities in Uganda and Congo.</p>
+            </div>
+        </section>
+
+        <!-- ================= HOW IT WORKS ================= -->
+        <section class="how-section" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label" data-i18n="howItWorksLabel">HOW IT WORKS</span>
+                    <h2 data-i18n="howTitle">Simple connections. Real opportunities.</h2>
+                </div>
+
+                <div class="how-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3 data-i18n="discover">Discover</h3>
+                        <p data-i18n="discoverText">Search for businesses, products, services and opportunities.</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3 data-i18n="connect">Connect</h3>
+                        <p data-i18n="connectText">Find the right person or business and start a conversation.</p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3 data-i18n="grow">Grow</h3>
+                        <p data-i18n="growText">Build relationships, trade, collaborate and create new opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BUILT FOR ================= -->
+        <section class="audience-section" id="audience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label" data-i18n="builtFor">BUILT FOR</span>
+                    <h2 data-i18n="audienceTitle">A growing community.</h2>
+                </div>
+
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <span class="card-label">01</span>
+                        <h3 data-i18n="forBusinesses">Businesses</h3>
+                        <p data-i18n="forBusinessesText">Put your business in front of potential customers and partners across Uganda and Congo.</p>
+                        <a href="businesses.html">
+                            <span data-i18n="learnMore">Learn more</span>
+                            →
+                        </a>
+                    </div>
+
+                    <div class="audience-card">
+                        <span class="card-label">02</span>
+                        <h3 data-i18n="forCustomers">Customers</h3>
+                        <p data-i18n="forCustomersText">Discover products and services from businesses across the border.</p>
+                        <a href="businesses.html">
+                            <span data-i18n="explore">Explore</span>
+                            →
+                        </a>
+                    </div>
+
+                    <div class="audience-card">
+                        <span class="card-label">03</span>
+                        <h3 data-i18n="forTraders">Traders</h3>
+                        <p data-i18n="forTradersText">Discover suppliers, customers and new business opportunities.</p>
+                        <a href="businesses.html">
+                            <span data-i18n="explore">Explore</span>
+                            →
+                        </a>
+                    </div>
+
+                    <div class="audience-card">
+                        <span class="card-label">04</span>
+                        <h3 data-i18n="forTransporters">Transporters</h3>
+                        <p data-i18n="forTransportersText">Connect with people and businesses that need transport and logistics.</p>
+                        <a href="businesses.html">
+                            <span data-i18n="findServices">Find Services</span>
+                            →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MARKETPLACE (PLACEHOLDER) ================= -->
+        <section class="marketplace-section" id="marketplace">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label" data-i18n="discover">MARKETPLACE</span>
+                    <h2>Coming Soon</h2>
+                    <p>Explore products and services across Uganda and Congo.</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>The marketplace section is being developed.</p>
+                    <a href="businesses.html" class="primary-btn">Explore Businesses →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVICES (PLACEHOLDER) ================= -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label" data-i18n="services">SERVICES</span>
+                    <h2>Coming Soon</h2>
+                    <p>Find services connecting Uganda and Congo.</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>The services section is being developed.</p>
+                    <a href="businesses.html" class="primary-btn">Explore Businesses →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONNECTION SECTION ================= -->
+        <section class="connection-section">
+            <div class="connection-background"></div>
+            <div class="container connection-content">
+                <span class="section-label" data-i18n="ourVision">OUR VISION</span>
+                <h2 data-i18n="visionTitle">Two countries.<br>One connection.</h2>
+                <p data-i18n="visionText">Uganda2Congo is creating a digital connection that makes discovering, connecting and doing business across borders easier.</p>
+                <div class="flags">
+                    <div>
+                        <strong>🇺🇬</strong>
+                        <span data-i18n="uganda">Uganda</span>
+                    </div>
+                    <div class="big-arrow">→</div>
+                    <div>
+                        <strong>🇨🇩</strong>
+                        <span data-i18n="congo">Congo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <span class="section-label" data-i18n="ready">READY TO CONNECT?</span>
+                <h2 data-i18n="ctaTitle">Be part of Uganda2Congo.</h2>
+                <p data-i18n="ctaText">Discover what is possible when Uganda and Congo connect.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="primary-btn dark" data-i18n="getStarted">Get Started <span>→</span></a>
+                    <a href="businesses.html" class="secondary-btn light" data-i18n="listBusiness">List Your Business</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="uganda-text">UGANDA</span>
+                    <span class="two-text">2</span>
+                    <span class="congo-text">CONGO</span>
+                </a>
+                <p data-i18n="footerText">Connecting people, businesses and opportunities across Uganda and Congo.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4 data-i18n="platform">Platform</h4>
+                    <a href="index.html" data-i18n="home">Home</a>
+                    <a href="index.html#about" data-i18n="about">About Us</a>
+                    <a href="index.html#how-it-works" data-i18n="howItWorks">How It Works</a>
+                    <a href="businesses.html" data-i18n="businesses">Businesses</a>
+                </div>
+
+                <div>
+                    <h4 data-i18n="discover">Discover</h4>
+                    <a href="index.html#marketplace" data-i18n="marketplace">Marketplace</a>
+                    <a href="index.html#services" data-i18n="services">Services</a>
+                    <a href="index.html#services" data-i18n="transport">Transport</a>
+                </div>
+
+                <div>
+                    <h4 data-i18n="business">Business</h4>
+                    <a href="businesses.html" data-i18n="listBusiness">List Your Business</a>
+                    <a href="#" data-i18n="businessSupport">Business Support</a>
+                    <a href="#" data-i18n="contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                © 2026 Uganda2Congo.
+                <span data-i18n="allRightsReserved">All rights reserved.</span>
+            </p>
+            <div class="footer-countries">
+                🇺🇬 Uganda
+                <span>•</span>
+                🇨🇩 Congo
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
